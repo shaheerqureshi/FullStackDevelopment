@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: blanchedalmond;
+        }
+
+        @media only screen and (max-width: 455px){
+            body{
+                background-color: yellow;
+            }
+            .boxes{
+                flex-direction: column;
+            }
+        }
+        @media only screen and (orientation: landscape){
+            body{
+                border: 6px solid purple;
+            }
+        }
+
+        .box{
+            width: 255px;
+            height: 255px;
+            background-color: turquoise;
+            padding: 3px;
+            margin: 3px;
+        }
+        .boxes{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        hey ia ma good boy
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
